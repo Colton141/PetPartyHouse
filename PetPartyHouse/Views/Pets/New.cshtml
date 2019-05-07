@@ -1,0 +1,35 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset='utf-8'>
+  <title>PetPartyHouse</title>
+</head>
+<body>
+
+  @* this page has not been totally changed to work with this project yet *@
+  <h1>Add a new available pet @Model.GetName()</h1>
+
+  <form action='/categories/@Model.GetId()/items' method='post'>
+    @*<input id='categoryId' name='categoryId' type='hidden' value='@Model.GetId()'>*@
+
+    <label for='petType'>Pet/Animal Type</label>
+    <input id='petType' name='petType' type='text'>
+
+    <label for='Breed'>Breed</label>
+    <input id='Breed' name='Breed' type='text'>
+
+    <label for='Name'>Name</label>
+    <input id='Name' name='Name' type='text'>
+
+    <label for='sex'>sex</label>
+    <input id='sex' name='sex' type='text'>
+
+    <label for='admittanceDate'>Date of admittance</label>
+    <input id='admittanceDate' name='admittanceDate' type='text'>
+
+    <button type='submit'>Add item</button>
+  </form>
+
+</body>
+</html>
